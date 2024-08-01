@@ -13,7 +13,7 @@ class PersonalMedicoControlador(APIView):  # Define la clase PersonalMedicoContr
             data = self.servicio.obtener_por_id(medico_id)  # Obtiene el médico por id
             return Response(data, status=status.HTTP_200_OK)  # Devuelve los datos con estado 200 OK
         data = self.servicio.obtener_todos()  # Si no se proporciona medico_id, obtiene todos los médicos
-        return Response(data, status=status.HTTP_200_OK)  # Devuelve los datos con estado 200 OK
+        return Response(data, status=status.HTTP_200_OK)  # Devuelve los datos con estado 200 
 
     def post(self, request):  # Método POST para crear un nuevo personal médico
         data = request.data  # Obtiene los datos de la solicitud
