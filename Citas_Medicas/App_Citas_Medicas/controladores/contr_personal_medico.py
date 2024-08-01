@@ -8,7 +8,7 @@ class PersonalMedicoControlador(APIView):  # Define la clase PersonalMedicoContr
         self.servicio = PersonalMedicoServicio()  # Inicializa el servicio de personal médico
         super().__init__(*args, **kwargs)  # Llama al constructor de la clase base
 
-    def get(self, request, medico_id=None):  # Método GET para obtener datos
+    def get(self, request, medico_id=None):  # Método GET para obtener los datos
         if medico_id:  # Si se proporciona un medico_id
             data = self.servicio.obtener_por_id(medico_id)  # Obtiene el médico por id
             return Response(data, status=status.HTTP_200_OK)  # Devuelve los datos con estado 200 OK
