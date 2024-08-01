@@ -8,6 +8,7 @@ class Usuario(AbstractBaseUser):
     correo = models.EmailField(unique=True)
     tipo_usuario = models.CharField(max_length=50)
 
+     # Indica que el campo de autenticación es 'correo'
     USERNAME_FIELD = 'correo'
     # Campos que deben ser requeridos al crear un usuario, aparte de 'correo'
     REQUIRED_FIELDS = ['nombre_completo', 'tipo_usuario']
