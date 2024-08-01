@@ -9,6 +9,7 @@ class Usuario(AbstractBaseUser):
     tipo_usuario = models.CharField(max_length=50)
 
     USERNAME_FIELD = 'correo'
+    # Campos que deben ser requeridos al crear un usuario, aparte de 'correo'
     REQUIRED_FIELDS = ['nombre_completo', 'tipo_usuario']
 
     objects = BaseUserManager()
