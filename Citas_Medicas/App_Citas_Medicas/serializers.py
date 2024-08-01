@@ -14,6 +14,7 @@ class PacienteSerializer(serializers.ModelSerializer):
         fields = ['id', 'usuario', 'direccion', 'telefono', 'historial_medico']
 
 class AdministradorSerializer(serializers.ModelSerializer):
+     # Serializador anidado para incluir detalles del usuario
     usuario = UsuarioSerializer()
 
     class Meta:
