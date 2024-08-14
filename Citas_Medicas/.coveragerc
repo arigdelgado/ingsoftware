@@ -1,0 +1,12 @@
+[run]
+branch = True
+source = App_Citas_Medicas
+omit = */migrations/*,*/tests.py
+
+[report]
+show_missing = True
+skip_covered = True
+fail_under = 60
+
+[html]
+directory = coverage_html_report
