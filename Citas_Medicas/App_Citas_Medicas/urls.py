@@ -1,7 +1,9 @@
 from django.urls import path
 from App_Citas_Medicas.controladores import *
 
-
+################################################################
+#rutasURL
+################################################################
 urlpatterns = [
     # Rutas para Usuarios
     path('usuarios/', UsuarioControlador.as_view(), name='usuario-list'),
