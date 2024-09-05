@@ -2,3 +2,10 @@ py .\manage.py test
 coverage run --source=App_Citas_Medicas manage.py test
 coverage report
 coverage html
+
+
+---siempre que se inicia el codigo usen git pull origin main---
+
+git add . 
+git commit -m "messaage"
+git push origin main
