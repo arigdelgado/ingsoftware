@@ -4,7 +4,7 @@
 // Coverage.py HTML report browser code.
 /*jslint browser: true, sloppy: true, vars: true, plusplus: true, maxerr: 50, indent: 4 */
 /*global coverage: true, document, window, $ */
-
+//update js
 coverage = {};
 
 // General helpers
