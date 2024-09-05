@@ -1,0 +1,4 @@
+py .\manage.py test
+coverage run --source=App_Citas_Medicas manage.py test
+coverage report
+coverage html
